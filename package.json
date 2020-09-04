@@ -1,0 +1,23 @@
+{
+	"name": "ph",
+	"version": "1.0.0",
+	"description": "Project Hope gives information of the current COVID-19 crisis",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"client": "npm start --prefix client",
+		"server": "nodemon server.js",
+		"dev": "concurrently \" npm run server\" \"npm run client\" ",
+		"prog-install": "npm install && cd client && npm install"
+	},
+	"author": "Dev-27, Nkicks2017, Mittens-for-Littens and White Elephant",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mongoose": "^5.10.2"
+	},
+	"devDependencies": {
+		"jest": "^26.4.2"
+	}
+}
